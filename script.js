@@ -35,6 +35,7 @@ function handleFormTask1(event) {
 
     createProduct(product, logProduct);
     createProduct(product, logTotalPrice);
+    alert("У консоль виведено результат підрахунку");
 }
 
 
@@ -183,7 +184,7 @@ const tweets = [
 function showResult() {
     const result = countTags(tweets);
     console.log(result);
-    alert("У консоль виведено результат підрахунку")
+    alert("У консоль виведено результат підрахунку");
 }
 
 
