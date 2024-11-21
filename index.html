@@ -10,26 +10,56 @@
     <main>
         <section>
           <h2>Завдання №1</h2>
+            <form id="productForm" onsubmit="handleFormTask1(event)">
+                <label for="productName">Назва товару:</label>
+                <input type="text" id="productName" required>
+                <br><br>
+                <label for="productPrice">Ціна товару (грн):</label>
+                <input type="number" id="productPrice" required>
+                <br><br>
+                <label for="productQuantity">Кількість:</label>
+                <input type="number" id="productQuantity" required>
+                <br><br>
+                <button type="submit">Додати товар</button>
+            </form>
         </section>
 
         <section>
             <h2>Завдання №3</h2>
+            <button onclick="showValidMedicines()">Показати дійсні медикаменти</button>
         </section>
 
         <section>
             <h2>Завдання №5</h2>
+            <button onclick="showFruits()">Обробити знижку на фрукти</button>
         </section>
 
         <section>
             <h2>Завдання №7</h2>
+            <form id="clientForm" onsubmit="handleFormSubmit(event)">
+                <label for="login">Логін:</label>
+                <input type="text" id="login" name="login" required>
+                <br><br>
+                <label for="email">Емейл:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <button type="submit">Надіслати</button>
+            </form>
         </section>
 
         <section>
             <h2>Завдання №9</h2>
+            <button onclick="showResult()">Підрахувати теги</button>
         </section>
 
         <section>
             <h2>Завдання №10</h2>
+            <form id="bracketsForm" onsubmit="handleForm(event)">
+                <label for="codeInput">Введіть JavaScript код:</label><br>
+                <textarea id="codeInput" rows="10" cols="30" placeholder="Введіть код з дужками"></textarea>
+                <br><br>
+                <button type="submit">Перевірити</button>
+            </form>
         </section>
     </main>
     <footer><p>ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК КОЛБЕКИ.</p></footer>
